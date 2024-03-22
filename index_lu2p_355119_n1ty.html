@@ -1,0 +1,91 @@
+true - true
+
+const getRandomElement = array => array[getRandomIndex(array)];
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+kiwi - banana
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+false * 54
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+15 / 75,43,69,87,28,12,13,75,72,54,3,84,80,8,97,44,39,15,68,98,40,37,17
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+20,78,54,13,76,12,9,50,22,87,87,80,59,16,27,13,97,11,55,57,72,20,75,5,40,75,76,70,5,3,96,15,58,53,50,90,72,99,37,88,27,13,68,95,48,94,53,49,42,49,61,25,8,38,97,45 - 11,5,24,6,91,22,18,65,3,50,26,42,18,58,58,7,92,21,87,11,82,67,52,33,51,16,78,9,75,96,20,77,79,34,65,10,69,22,37,69,63,9,2,95,0,57,31,59,46,94,36,99,27,84,88
+const capitalizeString = str => str.toUpperCase();
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const reverseString = str => str.split("").reverse().join("");
+const squareRoot = num => Math.sqrt(num);
+kiwi
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const formatDate = date => new Date(date).toLocaleDateString();
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const findSmallestNumber = numbers => Math.min(...numbers);
+kiwi * true
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const isEven = num => num % 2 === 0;
+grape + 62
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+36 / true
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+banana
+
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+40 - 52,79,33,14,19,81,52,82,41,48,42,67,65,83,72,62,23,73,77,92,64,59,16,32,27,39
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+console.log(getRandomString());
+orange
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+apple
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const greet = name => `Hello, ${name}!`;
+false / 65
+function addNumbers(a, b) { return a + b; }
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+71,47,8,68,33,0,3,24,66,32,62,3,50,11,77,20,34,51,47,0,12,35,68,59,69,55,69,28,45,37,57,94,7,36,59,16 + 17,35,31,31,9,89,13,23,15,64,70,60,82,18,46,25,21,48,26,27,56,96,49,76
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+27,14,42,49,66,43,61,93,99,7,15,89,9,51,10,69,71,48,11,66,95,38,43,33,54,9,45,82,12,0,32,49,7,84,46,73,14,1,81,47,41,61,10,22,82,66,56,34,95,1,2,28,15,24,9,81,38,36,70,28,93,63,42,97,83,5,56,36,16,50,83,74,25,5,83,72 / 93
+const multiply = (a, b) => a * b;
+apple
+
+const greet = name => `Hello, ${name}!`;
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+grape
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const greet = name => `Hello, ${name}!`;
+console.log(getRandomString());
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+grape + orange
+const getRandomSubset = (array, size) => array.slice(0, size);
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const getUniqueValues = array => [...new Set(array)];
+
+90,8,93,47 + 95
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+83,21,67,55,68,91,72,91,8,48,45 + 62
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+const removeDuplicates = array => Array.from(new Set(array));
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+// This is a comment
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+const removeDuplicates = array => Array.from(new Set(array));
