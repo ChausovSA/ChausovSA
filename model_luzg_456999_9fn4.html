@@ -1,0 +1,38 @@
+grape
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+grape
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const greet = name => `Hello, ${name}!`;
+apple
+
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+banana
+
+function addNumbers(a, b) { return a + b; }
+true + 96,59,82,80,69,30,90,70,23,60,93,29,84,79,87,87,76,57,1,30,73,36,24,68,38,28,23,43,69
+const removeDuplicates = array => Array.from(new Set(array));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+grape
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+let array = getRandomArray(); array.forEach(item => console.log(item));
+console.log(getRandomString());
+banana
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const reverseWords = str => str.split(" ").reverse().join(" ");
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+kiwi
+
+const multiply = (a, b) => a * b;
+9 + false
+// This is a comment
